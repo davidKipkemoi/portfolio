@@ -5,7 +5,7 @@ import {SectionWrapper} from '../hoc'
 import {slideIn} from '../utils/motion'
 
 import {styles} from '../styles'
-import Emailjs from '@emailjs/browser'
+import emailjs  from '@emailjs/browser'
 const Contact = () => {
   const formRef = useRef()
   const [form,setForm] = useState({
@@ -13,7 +13,9 @@ const Contact = () => {
     email:'',
     message:'',
   })
-  const [loading,setLoading]=useState(false)
+
+  const [loading,setLoading]=useState(false);
+
   const handleChange = (e)=>{
     const {target} = e
     const {name,value} = target
@@ -26,7 +28,29 @@ const Contact = () => {
   const handleSubmit = (e)=>{
     e.preventDefault()
     setLoading(true)
-    Emailjs.send()
+
+    emailjs.send(
+      "service_lf6dyff",
+      "template_cpjpmuj",
+      {
+        from_name:form.name,
+        to_name:"David Kipkemoi",
+        from_email:form.email,
+        to_email:"davidkipkemoi30@gmail.com",
+        message:form.message
+
+      },
+      "I08jIsfyPl6I2kbfd"
+    ).then(
+      ()=>{
+        setLoading(false);
+        setForm({
+          name:'',
+          email:'',
+         message:'',
+        })
+      }
+    ).catch(Error)
   }
   return (
     <div
@@ -45,7 +69,7 @@ const Contact = () => {
            ref={formRef}>
 
             <label className='flex flex-col'>
-              <span className='text-white font-medium mb-4'>Your Name is Mumo</span>
+              <span className='text-white font-medium mb-4'>Enter Your Name</span>
               <input 
               type="text"
               name="name"
@@ -56,7 +80,7 @@ const Contact = () => {
               
             </label>
             <label className='flex flex-col'>
-              <span className='text-white font-medium mb-4'>Your Email</span>
+              <span className='text-white font-medium mb-4'>Enter Your Email</span>
               <input 
               type="text"
               name="email"
@@ -71,7 +95,7 @@ const Contact = () => {
               <textarea 
               type="text"
               name="message"
-              rows={5}
+              rows={7}
               value={form.message}
               placeholder='Enter your Message'
               className='bg-white py-4 px-6 placeholder:text-secondary text-black rounded-2xl outline-none border-none font-medium'
@@ -82,7 +106,7 @@ const Contact = () => {
             type='submit'
             className='bg-tertiary py-4 px-8 rounded-xl w-full outline-none text-white font-bold shadow-md shadow-primary'
             >
-              {loading ?"Sending..":"Send"}
+              {loading ?"Sending...":"Send"}
             </button>
             </form> 
       </motion.div>
