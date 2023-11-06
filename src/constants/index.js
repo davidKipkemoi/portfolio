@@ -43,19 +43,19 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Full-Stack Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Front End Developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Cloud Services",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "IoT",
       icon: creator,
     },
   ];
@@ -117,55 +117,57 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "FullStack Developer ",
+      company_name: "Blitz Kenya (Freelancer) Fulltime",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "March 2018 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using React.js,Vuejs,Nodejs,Javascript and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
+        "Working on Open source projects."
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "Electrical Engineer Intern",
+      company_name: "Next Technologies",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "June 2017 - Sept 2017",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Lan design, setup, cabling and networking.",
+        "Load calculation and termination at bus bars.",
+        "Alarms, Server installation and configuration.",
+        "Software installation and troubleshooting.",
+        "Patch cords, optical fiber  termination and trucking."
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Software Engineer Intern",
+      company_name: "Computer Revolution Africa Group",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "June 2019 - Sep 2019",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Development of applications using Microsoft Power Apps.",
+        "Development of web applications using Laravel.",
+        "Use of Cloud Computing.",
+        "Bulk SMS integration.",
+        "Big Data"
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
+      title: " Electrical Engineer Intern.",
+      company_name: "State Department of Public Works",
       icon: meta,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "Jan 2021 - March 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Electrical design using AutoCAD.",
+        "Alarm systems, air-conditioning and fire detection.",
+        "Preparation of bill of quantities..",
       ],
     },
   ];
@@ -173,7 +175,7 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+        "I thought it was impossible to make a website as beautiful as our product, but David proved me wrong.",
       name: "Sara Lee",
       designation: "CFO",
       company: "Acme Co",
@@ -181,15 +183,15 @@ import {
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
+        "I've never met a web developer who truly cares about their clients' success like David does.",
+      name: "Dan Ochieng",
       designation: "COO",
       company: "DEF Corp",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+        "After David optimized our website, our traffic increased by 50%. We can't thank them enough!",
       name: "Lisa Wang",
       designation: "CTO",
       company: "456 Enterprises",
@@ -199,12 +201,12 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Safari Blog",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "The Safari Blog using MERN Stack is a web application designed to connect nature enthusiasts and outdoor adventurers. This platform provides a space for users to share their love for nature and share their experiences. It's an ideal place for bloggers and  photographers to connect.",
       tags: [
         {
-          name: "react",
+          name: "reactjs",
           color: "blue-text-gradient",
         },
         {
@@ -212,79 +214,79 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "nodejs",
           color: "pink-text-gradient",
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
-      links:"https://google.com"
+      source_code_link: "https://github.com/davidKipkemoi/Blog",
+      links:"https://worldsafariblog.netlify.app/"
     },
     {
-      name: "Job IT",
+      name: "Blitz Food/Chakula",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "This is a Web application project crafted using Vuejs3, NuxtJs and Vuetify. It is a simple application where a user can order food and pay via credit card.",
       tags: [
         {
-          name: "react",
+          name: "vuejs",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "nuxtjs",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "vuetify",
           color: "pink-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
-      links:"https://google.com"
+      source_code_link: "https://github.com/davidKipkemoi/david_Restaurant",
+      links:"https://blitzfood.netlify.app/"
     },
     {
-      name: "Car Rent",
+      name: "Chat App",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A chat application using WebSockets is a real-time messaging platform that allows users to engage in conversations instantly over the internet. WebSockets provide a full-duplex communication channel between a web browser and a server, enabling continuous data exchange. The chats are stored in the firebase database",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "socketio",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "firebase",
           color: "pink-text-gradient",
         },
       ],
       image: chat,
-      source_code_link: "https://github.com/",
-      links:"https://google.com"
+      source_code_link: "https://github.com/davidKipkemoi/tubonge-socketio",
+      links:"https://chatapp-79qq.onrender.com/"
     },
     {
-      name: "Trip Guide",
+      name: "PayOnline - Daraja API",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "The Daraja API Integration project is a web application that leverages the Daraja API, a mobile payment service provided by Safaricom in Kenya. This project aims to create a seamless and user-friendly interface for users to pay online using M-Pesa, a popular mobile money transfer service in Kenya.",
       tags: [
         {
-          name: "nextjs",
+          name: "reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "expressjs",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "tailwindcss",
           color: "pink-text-gradient",
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
-      links:"https://google.com"
+      source_code_link: "https://github.com/davidKipkemoi",
+      links:"https://payonlineke.netlify.app/"
     },
     
   ];
